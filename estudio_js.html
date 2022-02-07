@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        1. Dados dos números, determina cuál es el mayor.*/
+
+        let n1 = parseInt(prompt('Introduce un número'));
+        let n2 = parseInt(prompt('Introduce otro número'));
+
+        if ((!isNaN(n1)) || (!isNaN(n2))) {
+            document.write('Tienes que introducir dos números');
+            //alert('Debe introducir un número');
+        }   else if (n1 > n2) {
+            document.write(n1 + ' es mayor que ' + n2);
+            //alert(n1 + ' es mayor que ' + n2);   
+            }   else if (n2 > n1){
+                document.write(n2 + ' es mayor que ' + n1);
+                //alert(n2 + ' es mayor que ' + n1);
+            } else if ( n1 == n2){
+                document.write('Son iguales');
+                //alert('Son iguales');
+            }
+        
+
+        /*2. Un pasaje cuesta 150&euro, el pasajero paga según su edad de forma que:
+        Viaja gratis si es menor de 2 años
+        Paga el 50% si es menor de 12 años
+        Paga el 100% si tiene 12 años o más*/
+       /* 3. Determina el mayor de 3 números*/
+
+    </script>
+</body>
+</html>
