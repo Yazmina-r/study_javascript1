@@ -14,18 +14,14 @@
         let n1 = parseInt(prompt('Introduce un número'));
         let n2 = parseInt(prompt('Introduce otro número'));
 
-        if ((!isNaN(n1)) || (!isNaN(n2))) {
+        if ((isNaN(n1)) || (isNaN(n2))) {
             document.write('Tienes que introducir dos números');
-            //alert('Debe introducir un número');
         }   else if (n1 > n2) {
             document.write(n1 + ' es mayor que ' + n2);
-            //alert(n1 + ' es mayor que ' + n2);   
-            }   else if (n2 > n1){
+            } else if (n2 > n1){
                 document.write(n2 + ' es mayor que ' + n1);
-                //alert(n2 + ' es mayor que ' + n1);
             } else if ( n1 == n2){
                 document.write('Son iguales');
-                //alert('Son iguales');
             }
         
 
@@ -33,7 +29,33 @@
         Viaja gratis si es menor de 2 años
         Paga el 50% si es menor de 12 años
         Paga el 100% si tiene 12 años o más*/
+        
+        let pasaje = 150;
+        let edad = parseInt(prompt('Introducir edad del pasajero'));
+        
+        if ((edad > 0) && (edad <= 2)) {
+            document.write('Pasaje gratuito para menores de 2 años');
+        }else if ((edad > 2) && (edad <= 12)) {
+            var precio = pasaje/2;
+            document.write('El precio del pasaje será ' + precio);
+        }else if (edad > 12) {
+            document.write('El precio del pasaje es de ' + pasaje);
+        }
+        
+        
        /* 3. Determina el mayor de 3 números*/
+               var a = 7;
+       var b = 5;
+       var c = 8;
+
+       if ((a > b) && (a > c)) {
+           document.write( a + ' es el número mayor');
+       }else if ((b > a) && (b > c)){
+           document.write(b + ' es el número mayor');
+       }else{
+           document.write(c + ' es el número mayor');
+       }
+        
 
     </script>
 </body>
